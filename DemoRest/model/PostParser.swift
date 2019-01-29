@@ -35,7 +35,7 @@ class PostParser {
                 posts.append(currentPost)
             }
         }catch{
-            print("het werkt niet")
+            print("t werkt nie")
         }
         return posts
     }
