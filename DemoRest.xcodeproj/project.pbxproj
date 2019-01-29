@@ -12,6 +12,8 @@
 		5133356922004A7A0038B00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5133356722004A7A0038B00D /* Main.storyboard */; };
 		5133356B22004A7D0038B00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5133356A22004A7D0038B00D /* Assets.xcassets */; };
 		5133356E22004A7D0038B00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5133356C22004A7D0038B00D /* LaunchScreen.storyboard */; };
+		5133357722004DB30038B00D /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133357622004DB30038B00D /* UserPost.swift */; };
+		5133357922004EFF0038B00D /* PostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133357822004EFF0038B00D /* PostParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5133356A22004A7D0038B00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5133356D22004A7D0038B00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5133356F22004A7D0038B00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5133357622004DB30038B00D /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		5133357822004EFF0038B00D /* PostParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		5133356222004A7A0038B00D /* DemoRest */ = {
 			isa = PBXGroup;
 			children = (
+				5133357522004D820038B00D /* model */,
 				5133356322004A7A0038B00D /* AppDelegate.swift */,
 				5133356522004A7A0038B00D /* ViewController.swift */,
 				5133356722004A7A0038B00D /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				5133356F22004A7D0038B00D /* Info.plist */,
 			);
 			path = DemoRest;
+			sourceTree = "<group>";
+		};
+		5133357522004D820038B00D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5133357622004DB30038B00D /* UserPost.swift */,
+				5133357822004EFF0038B00D /* PostParser.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				5133356622004A7A0038B00D /* ViewController.swift in Sources */,
 				5133356422004A7A0038B00D /* AppDelegate.swift in Sources */,
+				5133357922004EFF0038B00D /* PostParser.swift in Sources */,
+				5133357722004DB30038B00D /* UserPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = deprest.iam.DemoRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = deprest.iam.DemoRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
